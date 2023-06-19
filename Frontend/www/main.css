@@ -1,0 +1,345 @@
+body{
+    margin: 0;
+    background-color: rgba(234,231,220,0.99);
+}
+.allElement{
+    min-width: 470px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Calibri, "sans-serif" ;
+    box-sizing: border-box;
+
+    background-color: rgba(234,231,220,0.99);
+}
+.market{
+width: calc(100% - 230px);
+/*background-color: rgba(234,231,220,0.99);*/
+}
+.basket{
+    width: 230px;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+.pizzaList img{
+
+    width: 145px;
+
+    height:145px;
+}
+.listItem img{
+    width: 50px;
+    height: 50px;
+}
+.sizing img{
+    width: 10px;
+    height: 10px;
+}
+.menu{
+    min-width: 220px;
+    position: fixed;
+    top:0;
+    /*left: 8px;*/
+    display: flex;
+    box-sizing: border-box;
+    height: 70px;
+    width: calc(100% - 230px);
+    /*width: 57%;*/
+    font-size: small;
+    background-color: black;
+    opacity: 0.8;
+}
+.badge{
+    width: 60px;
+    height: 100%;
+    background-color: rgba(234,134,46,0.99);
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+.roof{
+    width: 100%;
+    position: relative;
+    transform: rotate(180deg);
+    bottom: -17px;
+;
+}
+.l1{
+    font-size: 14px;
+}
+.l2{
+    font-size: 17px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    color: white;
+    height: 100%;
+    width: 92%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.sign-in1, .sign-in2{
+    /*margin: -10px;*/
+    float: right;
+    width: 70px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.sign-in2{
+    display: none;
+}
+.button{
+    color: white;
+    background: linear-gradient(to bottom, rgba(234, 168, 6, 0.99), #F2711D);
+    border: 1px solid #F2711D;
+    border-radius: 5px;
+    /*transition: background-color 0.5s ease;*/
+}
+
+hr{
+    margin: 0;
+    color: darkgrey;
+}
+.labelInHead span{
+    color: darkgrey;
+}
+.labelInHead{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    /*height: 100%;*/
+    font-size: 14px;
+}
+.information{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 50%;
+    border-bottom: 1px solid lightgray;
+}
+.pizza{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+
+}
+
+/*.withoutCaption{*/
+/*    width:calc(100%- 230px);*/
+/*    min-width: 220px;*/
+/*    flex-grow: 1;*/
+/*}*/
+.caption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    width:calc(100%- 230px);
+
+}
+.all{
+    font-size: 20px;
+    font-weight: bold;
+}
+.amount {
+    background-color: rgba(253,174,26,0.99);
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+.circle{
+    width: 20px;
+    height:20px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.typeList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70%;
+    width:100%;
+}
+.typeList span{
+    margin-right: 1%;
+    padding: 1%;
+    color: rgba(253,174,26,0.99);
+}
+span.highlightedType {
+    background-color: rgba(253,174,26,0.99);
+    color: white;
+    border-radius: 20%;
+}
+.pizzaList{
+    margin-top: 5px;
+    margin-left: 2.5%;
+    width:95%;
+    display: grid;
+    box-sizing: border-box;
+    gap: 3%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 50px;
+}
+/*.infoPizza{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-self: flex-end;*/
+
+/*}*/
+.pizzaItem{
+    /*justify-content: center;*/
+
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom: -20px;
+}
+.imagePizza{
+    display: flex;
+    justify-content: center;
+}
+
+.name{
+    font-weight: bold;
+    margin-left: 5px;
+    display: block;
+    color:#F2711D;
+    font-size: 17px;
+}
+.type{
+    display: block;
+    color:#b1afaf;
+    font-size:10px;
+    margin-left: 5px;
+}
+.content{
+    display: block;
+    margin-left: 2px;
+    font-size:13px;
+    width:95%;
+}
+.properties{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.prop{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+.sizing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+.buy{
+
+    margin-bottom:3px;
+}
+.price{
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.priceCurrency{
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+.footRoof{
+    position: fixed;
+    width: 80px;
+    height: 90px;
+    background-color: rgba(234,134,46,0.99);
+    font-weight: bold;
+    color: white;
+    left: 15px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+    padding-top: 0;
+    box-sizing: border-box;
+    border-right: 1px solid #CE7524;
+    border-left: 1px solid #CE7524;
+    background: linear-gradient(to top,  rgba(234,115,36,0.99), rgba(234,134,46,0.99));
+}
+.imgFootRoof{
+    width: 80px;
+    position:relative;
+    bottom:9px;
+    left: -10.2px;
+}
+.projectInfo {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #b1afaf;
+    font-size: 11px;
+    background: linear-gradient(to bottom, white  , lightgray );
+}
+@media (max-width: 965px) {
+    .сost{
+        display: none;
+    }
+    /*.pizzaList{*/
+    /*    grid-template-rows: repeat(3, 1fr);*/
+    /*    grid-template-columns: repeat(3, 1fr);*/
+    /*}*/
+
+}
+@media (max-width: 740px) {
+    .schedule{
+        display: none;
+    }
+    .pizzaList{
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+@media (max-width: 500px) {
+    .label{
+        display: none;
+        /*visibility: hidden;*/
+    }
+    .sign-in1{
+        display: none;
+    }
+    .sign-in2{
+        display: flex;
+
+    }
+    .pizza{
+        justify-content: flex-end;
+    }
+    .pizzaList{
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}

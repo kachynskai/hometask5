@@ -1,83 +1,4 @@
-<!--<!DOCTYPE html>-->
-<!--<html>-->
-<!--<head lang="en">-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Pizza</title>-->
 
-<!--    &lt;!&ndash; Bootsrap CSS &ndash;&gt;-->
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
-
-<!--    &lt;!&ndash; LESS основний файл &ndash;&gt;-->
-<!--    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />-->
-<!--    &lt;!&ndash; LESS JavaScript компілятор &ndash;&gt;-->
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>-->
-
-
-<!--</head>-->
-<!--<body>-->
-<!--<div id="cart"></div>-->
-<!--<div class="container">-->
-<!--    <div class="row" id="pizza_list">-->
-<!--        <div class="col-sm-6 col-md-4">-->
-<!--            <div class="thumbnail pizza-card">-->
-<!--                <img src="assets/images/pizza_1.jpg">-->
-
-<!--                <div class="caption"><h3>Thumbnail label</h3>-->
-
-<!--                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
-
-<!--                    <p>-->
-<!--                        <a href="#" class="btn btn-primary">Button 2</a>-->
-<!--                        <a href="#" class="btn btn-default">Button 1</a>-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col-sm-6 col-md-4">-->
-<!--            <div class="thumbnail pizza-card">-->
-<!--                <img src="assets/images/pizza_2.jpg">-->
-
-<!--                <div class="caption"><h3>Thumbnail label</h3>-->
-
-<!--                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
-
-<!--                    <p>-->
-<!--                        <a href="#" class="btn btn-primary">Button 3</a>-->
-<!--                        <a href="#" class="btn btn-default">Button 4</a>-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-<!--        <div class="col-sm-6 col-md-4">-->
-<!--            <div class="thumbnail pizza-card">-->
-<!--                <img src="assets/images/pizza_3.jpg">-->
-
-<!--                <div class="caption"><h3>Thumbnail label</h3>-->
-
-<!--                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>-->
-
-<!--                    <p>-->
-<!--                        <a href="#" class="btn btn-primary">Button 5</a>-->
-<!--                        <a href="#" class="btn btn-default">Button 6</a>-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--&lt;!&ndash; jQuery JavaScript &ndash;&gt;-->
-<!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>-->
-
-<!--&lt;!&ndash;Bootsrap JavaScript &ndash;&gt;-->
-<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
-
-<!--&lt;!&ndash;Own JavaScript &ndash;&gt;-->
-<!--&lt;!&ndash;<script type="text/javascript"  src="assets/js/main.js"> </script>&ndash;&gt;-->
-<!--</body>-->
-<!--</html>-->
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -97,12 +18,11 @@
             </section>
             <section class="header">
                 <section class="information">
-                <section class="labelInHead">
-                    <span class="number">(044)-222-5-222</span>
-                    <span class="schedule">24 години/ 7 днів на тиждень</span>
-                    <span class="сost">Безкоштовна доставка піци</span>
-<!--                    <button class="button sign-in">Ввійти</button>-->
-                </section>
+                    <section class="labelInHead">
+                        <span class="number">(044)-222-5-222</span>
+                        <span class="schedule">24 години/ 7 днів на тиждень</span>
+                        <span class="сost">Безкоштовна доставка піци</span>
+                    </section>
                     <button class="button sign-in1">Ввійти</button>
                 </section>
                 <section class="pizza">
@@ -111,7 +31,6 @@
                 </section>
             </section>
         </section>
-<!--        <section class="withoutCaption">-->
             <section class="caption" >
                 <span class="all">Усі піци</span>
                 <span class="circle amount">8</span>
@@ -127,6 +46,7 @@
         <section class="pizzaList">
             <section class="pizzaItem">
                 <section class="infoPizza">
+                    <section class="new status">New</section>
                     <section class="imagePizza"><img src="assets/images/pizza_7.jpg" alt="Піца Імпреза"/></section>
                     <span class="name">Імпреза</span>
                     <span class="type">М’ясна піца</span>
@@ -134,27 +54,27 @@
                 </section>
                 <section class="properties">
                     <section class="prop small">
-              <span class="sizing">
-                <img src="assets/images/size-icon.svg" alt="розмір піци">
-                <label>30</label>
-              </span>
+                          <span class="sizing">
+                            <img src="assets/images/size-icon.svg" alt="розмір піци">
+                            <label>30</label>
+                          </span>
                         <span class="sizing">
-                <img src="assets/images/weight.svg" alt="вага піци">
-                <label>370</label>
-              </span>
+                            <img src="assets/images/weight.svg" alt="вага піци">
+                            <label>370</label>
+                        </span>
                         <span class="price">99</span>
                         <span class="priceCurrency">грн.</span>
                         <button class="button buy">Купити</button>
                     </section>
                     <section class="prop big">
-               <span class="sizing">
-                <img src="assets/images/size-icon.svg" alt="розмір піци">
-                <label>40</label>
-              </span>
+                           <span class="sizing">
+                            <img src="assets/images/size-icon.svg" alt="розмір піци">
+                            <label>40</label>
+                          </span>
                         <span class="sizing">
-                <img src="assets/images/weight.svg" alt="вага піци">
-                <label>660</label>
-              </span>
+                            <img src="assets/images/weight.svg" alt="вага піци">
+                            <label>660</label>
+                        </span>
                         <span class="price">169</span>
                         <span class="priceCurrency">грн.</span>
                         <button class="button buy">Купити</button>
@@ -163,6 +83,7 @@
             </section>
             <section class="pizzaItem">
                 <section class="infoPizza">
+                    <section class="popular status">Popular</section>
                     <section class="imagePizza"><img src="assets/images/pizza_2.jpg" alt="Піца BBQ"/></section>
                     <span class="name">BBQ</span>
                     <span class="type">М’ясна піца</span>
@@ -170,27 +91,27 @@
                 </section>
                 <section class="properties">
                     <section class="prop small">
-              <span class="sizing">
-                <img src="assets/images/size-icon.svg" alt="розмір піци">
-                <label>30</label>
-              </span>
+                          <span class="sizing">
+                            <img src="assets/images/size-icon.svg" alt="розмір піци">
+                            <label>30</label>
+                          </span>
                         <span class="sizing">
-                <img src="assets/images/weight.svg" alt="вага піци">
-                 <label>460</label>
-              </span>
+                            <img src="assets/images/weight.svg" alt="вага піци">
+                             <label>460</label>
+                        </span>
                         <span class="price">139</span>
                         <span class="priceCurrency">грн.</span>
                         <button class="button buy">Купити</button>
                     </section>
                     <section class="prop big">
-               <span class="sizing">
-                <img src="assets/images/size-icon.svg" alt="розмір піци">
-                <label>40</label>
-              </span>
+                           <span class="sizing">
+                                <img src="assets/images/size-icon.svg" alt="розмір піци">
+                                <label>40</label>
+                          </span>
                         <span class="sizing">
-                <img src="assets/images/weight.svg" alt="вага піци">
-                 <label>840</label>
-              </span>
+                            <img src="assets/images/weight.svg" alt="вага піци">
+                            <label>840</label>
+                        </span>
                         <span class="price">199</span>
                         <span class="priceCurrency">грн.</span>
                         <button class="button buy">Купити</button>
@@ -206,27 +127,27 @@
                 </section>
                 <section class="properties">
                     <section class="prop small">
-              <span class="sizing">
-                <img src="assets/images/size-icon.svg" alt="розмір піци">
-                <label>30</label>
-              </span>
+                          <span class="sizing">
+                            <img src="assets/images/size-icon.svg" alt="розмір піци">
+                            <label>30</label>
+                          </span>
                         <span class="sizing">
-                <img src="assets/images/weight.svg" alt="вага піци">
-                 <label>430</label>
-              </span>
+                            <img src="assets/images/weight.svg" alt="вага піци">
+                             <label>430</label>
+                        </span>
                         <span class="price">115</span>
                         <span class="priceCurrency">грн.</span>
                         <button class="button  buy">Купити</button>
                     </section>
                     <section class="prop big">
-               <span class="sizing">
-                <img src="assets/images/size-icon.svg" alt="розмір піци">
-                <label >40</label>
-              </span>
+                           <span class="sizing">
+                                <img src="assets/images/size-icon.svg" alt="розмір піци">
+                                <label >40</label>
+                          </span>
                         <span class="sizing">
-                <img src="assets/images/weight.svg" alt="вага піци">
-                 <label >780</label>
-              </span>
+                            <img src="assets/images/weight.svg" alt="вага піци">
+                             <label >780</label>
+                        </span>
                         <span class="price">179</span>
                         <span class="priceCurrency">грн.</span>
                         <button class="button buy">Купити</button>
@@ -301,27 +222,27 @@
                 </section>
                 <section class="properties">
                     <section class="prop small">
-              <span class="sizing">
-                <img src="assets/images/size-icon.svg" alt="розмір піци">
-                <label >30</label>
-              </span>
+                          <span class="sizing">
+                            <img src="assets/images/size-icon.svg" alt="розмір піци">
+                            <label >30</label>
+                          </span>
                         <span class="sizing">
-                <img src="assets/images/weight.svg" alt="вага піци">
-                 <label>470</label>
-              </span>
+                            <img src="assets/images/weight.svg" alt="вага піци">
+                             <label>470</label>
+                        </span>
                         <span class="price">115</span>
                         <span class="priceCurrency">грн.</span>
                         <button class="button buy">Купити</button>
                     </section>
                     <section class="prop big">
-               <span  class="sizing" >
-                <img src="assets/images/size-icon.svg" alt="розмір піци">
-                <label>40</label>
-              </span>
+                           <span  class="sizing" >
+                            <img src="assets/images/size-icon.svg" alt="розмір піци">
+                            <label>40</label>
+                          </span>
                         <span  class="sizing">
-                <img src="assets/images/weight.svg" alt="вага піци">
-                 <label>780</label>
-              </span>
+                            <img src="assets/images/weight.svg" alt="вага піци">
+                             <label>780</label>
+                        </span>
                         <span class="price">180</span>
                         <span class="priceCurrency">грн.</span>
                         <button class="button buy">Купити</button>
@@ -342,9 +263,9 @@
                             <label>40</label>
                           </span>
                         <span class="sizing">
-                <img src="assets/images/weight.svg" alt="вага піци">
-                 <label >845</label>
-              </span>
+                            <img src="assets/images/weight.svg" alt="вага піци">
+                             <label >845</label>
+                        </span>
                         <span class="price">399</span>
                         <span class="priceCurrency">грн.</span>
                         <button class="button buy">Купити</button>
@@ -360,27 +281,27 @@
                 </section>
                 <section class="properties">
                     <section class="prop small">
-              <span  class="sizing">
-                <img src="assets/images/size-icon.svg" alt="розмір піци">
-                <label >30</label>
-              </span>
+                          <span  class="sizing">
+                            <img src="assets/images/size-icon.svg" alt="розмір піци">
+                            <label >30</label>
+                          </span>
                         <span  class="sizing">
-                <img src="assets/images/weight.svg" alt="вага піци">
-                 <label >400</label>
-              </span>
+                            <img src="assets/images/weight.svg" alt="вага піци">
+                             <label >400</label>
+                        </span>
                         <span class="price">189</span>
                         <span class="priceCurrency">грн.</span>
                         <button class="button buy">Купити</button>
                     </section>
                     <section class="prop big">
-               <span  class="sizing">
-                <img src="assets/images/size-icon.svg" alt="розмір піци">
-                <label >40</label>
-              </span>
-                        <span  class="sizing">
-                <img src="assets/images/weight.svg" alt="вага піци">
-                 <label>700</label>
-              </span>
+                       <span  class="sizing">
+                            <img src="assets/images/size-icon.svg" alt="розмір піци">
+                            <label >40</label>
+                       </span>
+                       <span  class="sizing">
+                            <img src="assets/images/weight.svg" alt="вага піци">
+                            <label>700</label>
+                       </span>
                         <span class="price">299</span>
                         <span class="priceCurrency">грн.</span>
                         <button class="button buy">Купити</button>
@@ -388,7 +309,7 @@
                 </section>
             </section>
 
-<!--        </section>-->
+        </section>
         </section>
         <section class="footRoof">
             <img src="assets/images/discount.svg" alt="Фігурка для верхньої панелі"class="imgFootRoof"/>
@@ -397,12 +318,10 @@
                 <section>-20%</section>
             </section>
         </section>
-
-    </section>
     <section class="basket">
-        <section>
+        <section class="basketTitle">
         <span>
-          <span>Замовлення</span>
+          <span class="title" >Замовлення</span>
           <span class="circle amount">3</span>
         </span>
             <button class="clear">Очистити замовлення</button>
@@ -411,7 +330,7 @@
             <section class="listItem">
                 <section class="info">
                     <span class="liName">BBQ (Мала)</span>
-                    <span class="sizing">
+                    <span class="sizingBought">
                <span>
                 <img src="assets/images/size-icon.svg" alt="розмір піци">
                 <label>30</label>
@@ -421,53 +340,51 @@
                  <label>460</label>
               </span>
             </span>
-                    <span>
-              <span class="boughtPrice">556 грн</span>
-              <span>
-                <span class="remove circle ">-</span>
-                <span class="number">4</span>
-                <span class="add circle " >+</span>
-              </span>
-              <span class="delete circle">x</span>
+                    <span class="purse">
+                <span class="boughtPrice">556 грн</span>
+                 <span>
+                     <span class="remove circle ">-</span>
+                     <span class="number">4</span>
+                     <span class="add circle " >+</span>
+                 </span>
+                 <span class="delete circle">x</span>
             </span>
                 </section>
                 <section class="image">
                     <img src="assets/images/pizza_2.jpg" alt="Піца BBQ"/>
                 </section>
             </section>
-            <hr/>
             <section class="listItem">
                 <section class="info">
                     <span class="liName">Россо Густо (Мала)</span>
-                    <span class="sizing">
-               <span>
-                <img src="assets/images/size-icon.svg" alt="розмір піци">
-                <label >30</label>
-              </span>
-              <span>
-                <img src="assets/images/weight.svg" alt="вага піци">
-                 <label >400</label>
-              </span>
-            </span>
-                    <span>
-              <span class="boughtPrice">189 грн</span>
-              <span>
-                <span class="remove circle ">-</span>
-                <span class="number">1</span>
-                <span class="add circle " >+</span>
-              </span>
-              <span class="delete circle">x</span>
+                    <span class="sizingBought">
+                        <span>
+                            <img src="assets/images/size-icon.svg" alt="розмір піци">
+                            <label >30</label>
+                        </span>
+                        <span>
+                            <img src="assets/images/weight.svg" alt="вага піци">
+                            <label >400</label>
+                        </span>
+                     </span>
+                    <span class="purse">
+                <span class="boughtPrice">189 грн</span>
+                 <span>
+                     <span class="remove circle ">-</span>
+                     <span class="number">1</span>
+                     <span class="add circle " >+</span>
+                 </span>
+                 <span class="delete circle">x</span>
             </span>
                 </section>
                 <section class="image">
                     <img src="assets/images/pizza_4.jpg" alt=" Піца Россо Густо"/>
                 </section>
             </section>
-            <hr/>
             <section class="listItem">
                 <section class="info">
                     <span class="liName">Міксовий поло (Велика)</span>
-                    <span class="sizing">
+                    <span class="sizingBought">
               <span >
                 <img src="assets/images/size-icon.svg" alt="розмір піци">
                 <label >40</label>
@@ -477,28 +394,27 @@
                  <label >780</label>
               </span>
             </span>
-                    <span>
-              <span class="boughtPrice">179 грн</span>
-              <span>
-                <span class="remove circle ">-</span>
-                <span class="number">1</span>
-                <span class="add circle " >+</span>
-              </span>
-              <span class="delete circle">x</span>
+            <span class="purse">
+                <span class="boughtPrice">179 грн</span>
+                 <span>
+                     <span class="remove circle ">-</span>
+                     <span class="number">1</span>
+                     <span class="add circle " >+</span>
+                 </span>
+                 <span class="delete circle">x</span>
             </span>
                 </section>
                 <section class="image">
                     <img src="assets/images/pizza_1.jpg" alt="Піца Міксовий поло"/>
                 </section>
             </section>
-            <hr/>
         </section>
-        <section>
-        <span>
-          <label>Сума замовлення</label>
-          <label> 924 грн</label>
-        </span>
-            <button class="button">Замовити</button>
+        <section class="order">
+        <section class="valley">
+          <label class="sum">Сума замовлення</label>
+          <label class="value"> 924 грн</label>
+        </section>
+            <section class="toOrder"><button class="button scale">Замовити</button></section>
         </section>
     </section>
 </section>

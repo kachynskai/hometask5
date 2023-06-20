@@ -1,9 +1,9 @@
 body{
     margin: 0;
     background-color: rgba(234,231,220,0.99);
+
 }
 .allElement{
-    min-width: 470px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,15 +13,16 @@ body{
     background-color: rgba(234,231,220,0.99);
 }
 .market{
-width: calc(100% - 230px);
-/*background-color: rgba(234,231,220,0.99);*/
+    min-width: 220px;
+    width: calc(100% - 230px);
 }
 .basket{
     width: 230px;
+    height: 100%;
     position: fixed;
     top: 0;
     right: 0;
-
+    z-index: 4;
 }
 .pizzaList img{
 
@@ -37,19 +38,23 @@ width: calc(100% - 230px);
     width: 10px;
     height: 10px;
 }
+.sizingBought img{
+    width: 10px;
+    height: 10px;
+
+}
 .menu{
-    min-width: 220px;
+    /*min-width: 220px;*/
     position: fixed;
     top:0;
-    /*left: 8px;*/
     display: flex;
     box-sizing: border-box;
     height: 70px;
     width: calc(100% - 230px);
-    /*width: 57%;*/
     font-size: small;
     background-color: black;
     opacity: 0.8;
+    z-index: 2;
 }
 .badge{
     width: 60px;
@@ -102,7 +107,6 @@ width: calc(100% - 230px);
     background: linear-gradient(to bottom, rgba(234, 168, 6, 0.99), #F2711D);
     border: 1px solid #F2711D;
     border-radius: 5px;
-    /*transition: background-color 0.5s ease;*/
 }
 
 hr{
@@ -117,7 +121,6 @@ hr{
     display: flex;
     justify-content: space-between;
     width: 70%;
-    /*height: 100%;*/
     font-size: 14px;
 }
 .information{
@@ -136,12 +139,6 @@ hr{
     font-size: 14px;
 
 }
-
-/*.withoutCaption{*/
-/*    width:calc(100%- 230px);*/
-/*    min-width: 220px;*/
-/*    flex-grow: 1;*/
-/*}*/
 .caption{
     display: flex;
     justify-content: center;
@@ -166,16 +163,50 @@ hr{
     margin-left: 5px;
     border-radius: 50%;
 }
+.remove{
+    background-color: red;
+    margin-right: 2px;
+    color: white;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+    display: inline-block;
+    border-color: red;
+    border-bottom: solid 2px rgba(182, 7, 6, 0.99);
+}
+.delete{
+    background: linear-gradient(to bottom, white,  rgba(238,235,224,0.99));
+    color: #F2711D;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+    display: inline-block;
+    border-color: lightgray;
+    border-bottom: solid 2px darkgrey;
+
+}
+.add{
+    background-color: rgba(28,180,80,0.99);
+    color: white;
+    font-weight: bold;
+    padding: 1px;
+    display: inline-block;
+    text-align: center;
+    border-color: rgba(28,180,80,0.99);
+    border-bottom: solid 2px rgba(27,138,86,0.99) ;
+}
 .typeList{
     display: flex;
     justify-content: center;
+    /*box-sizing: border-box;*/
     align-items: center;
     font-size: 70%;
     width:100%;
+
 }
 .typeList span{
     margin-right: 1%;
-    padding: 1%;
+    padding: 0.7%;
     color: rgba(253,174,26,0.99);
 }
 span.highlightedType {
@@ -184,7 +215,7 @@ span.highlightedType {
     border-radius: 20%;
 }
 .pizzaList{
-    margin-top: 5px;
+    margin-top: 15px;
     margin-left: 2.5%;
     width:95%;
     display: grid;
@@ -194,21 +225,33 @@ span.highlightedType {
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 50px;
 }
-/*.infoPizza{*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-self: flex-end;*/
-
-/*}*/
 .pizzaItem{
-    /*justify-content: center;*/
-
+    position: relative;
     display: flex;
     flex-direction: column;
-   justify-content: space-between;
+    justify-content: space-between;
     box-sizing: border-box;
     background-color: white;
     margin-bottom: -20px;
+    z-index: 1;
+}
+.status{
+    position: absolute;
+    font-size: 12px;
+    right: -2%;
+    top:-10px;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    padding: 3px;
+}
+.new{
+
+    background-color: rgba(238,92,69,0.99);
+}
+.popular{
+    background-color: rgba(132,238,131,0.99);
+
 }
 .imagePizza{
     display: flex;
@@ -269,7 +312,6 @@ span.highlightedType {
     position: fixed;
     width: 80px;
     height: 90px;
-    background-color: rgba(234,134,46,0.99);
     font-weight: bold;
     color: white;
     left: 15px;
@@ -283,12 +325,13 @@ span.highlightedType {
     border-right: 1px solid #CE7524;
     border-left: 1px solid #CE7524;
     background: linear-gradient(to top,  rgba(234,115,36,0.99), rgba(234,134,46,0.99));
+    z-index: 4;
 }
 .imgFootRoof{
     width: 80px;
     position:relative;
-    bottom:9px;
-    left: -10.2px;
+    bottom:8px;
+    left: -10.3px;
 }
 .projectInfo {
     height: 70px;
@@ -300,15 +343,102 @@ span.highlightedType {
     font-size: 11px;
     background: linear-gradient(to bottom, white  , lightgray );
 }
+.listBought{
+    align-items: baseline;
+    background-color: rgba(252,252,254,0.99);
+    height:468px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.basketTitle{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.clear{
+    font-size: 8px;
+    width: 50px;
+    border:none;
+    color: darkgrey;
+    background-color: white;
+
+}
+.listItem{
+    display: flex;
+    background-color: rgba(252,252,254,0.99);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: -22px;
+    padding-bottom: 2px ;
+    border-bottom: 1px solid darkgrey;
+}
+.liName{
+    color: #F2711D;
+
+}
+.sizingBought{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 10px;
+}
+.sizingBought label{
+   margin-left: -2px;
+    margin-right: 6px;
+}
+.info{
+    flex-direction: column;
+    width: 80%;
+    margin-left: 5px;
+    justify-content: left;
+}
+.boughtPrice{
+    font-weight: bold;
+    font-size: 12px;
+}
+.order{
+    background-color: white;
+}
+.valley{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.sum{
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.value{
+    font-weight: bold;
+    margin-right: 10px;
+}
+.toOrder{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.scale{
+    padding: 5px;
+}
+
 @media (max-width: 965px) {
     .сost{
         display: none;
     }
-    /*.pizzaList{*/
-    /*    grid-template-rows: repeat(3, 1fr);*/
-    /*    grid-template-columns: repeat(3, 1fr);*/
-    /*}*/
-
 }
 @media (max-width: 740px) {
     .schedule{
@@ -318,20 +448,19 @@ span.highlightedType {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: repeat(2, 1fr);
     }
-
-
 }
-@media (max-width: 500px) {
+@media (max-width: 560px) {
     .label{
         display: none;
-        /*visibility: hidden;*/
     }
     .sign-in1{
         display: none;
     }
     .sign-in2{
         display: flex;
-
+    }
+    .typeList{
+        font-size: 50%;
     }
     .pizza{
         justify-content: flex-end;
@@ -340,6 +469,31 @@ span.highlightedType {
         grid-template-rows: repeat(10, 1fr);
         grid-template-columns: repeat(1, 1fr);
     }
-
-
+}
+@media (max-width: 468px) {
+    .market{
+        width:55%;
+    }
+    .basket{
+        min-width: 178px;
+        width:45%;
+    }
+    .menu{
+        width: 55%;
+    }
+}
+@media (max-width: 412px) {
+    body{
+        min-width: 412px;
+    }
+    .basket{
+        position: static;
+    }
+    .menu{
+        position: static;
+        width: 100%;
+    }
+    .caption{
+        margin-top: 3px;
+    }
 }

@@ -212,7 +212,7 @@ hr{
 span.highlightedType {
     background-color: rgba(253,174,26,0.99);
     color: white;
-    border-radius: 20%;
+    border-radius: 4px;
 }
 .pizzaList{
     margin-top: 15px;

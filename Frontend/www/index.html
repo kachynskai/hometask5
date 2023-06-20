@@ -33,7 +33,7 @@
         </section>
             <section class="caption" >
                 <span class="all">Усі піци</span>
-                <span class="circle amount">8</span>
+                <span id="number" class="circle amount ">8</span>
             </section>
             <section class="typeList">
                 <span class="highlightedType">Усі</span>
@@ -312,7 +312,7 @@
         </section>
         </section>
         <section class="footRoof">
-            <img src="assets/images/discount.svg" alt="Фігурка для верхньої панелі"class="imgFootRoof"/>
+            <img src="assets/images/discount.svg" alt="Фігурка для верхньої панелі" class="imgFootRoof"/>
             <section class="advertising">
                 <section>Цього тижня на все</section>
                 <section>-20%</section>
@@ -322,102 +322,107 @@
         <section class="basketTitle">
         <span>
           <span class="title" >Замовлення</span>
-          <span class="circle amount">3</span>
+          <span id="amountReserved" class="circle amount">0</span>
         </span>
             <button class="clear">Очистити замовлення</button>
         </section>
         <section class="listBought">
-            <section class="listItem">
-                <section class="info">
-                    <span class="liName">BBQ (Мала)</span>
-                    <span class="sizingBought">
-               <span>
-                <img src="assets/images/size-icon.svg" alt="розмір піци">
-                <label>30</label>
-              </span>
-              <span>
-                <img src="assets/images/weight.svg" alt="вага піци">
-                 <label>460</label>
-              </span>
-            </span>
-                    <span class="purse">
-                <span class="boughtPrice">556 грн</span>
-                 <span>
-                     <span class="remove circle ">-</span>
-                     <span class="number">4</span>
-                     <span class="add circle " >+</span>
-                 </span>
-                 <span class="delete circle">x</span>
-            </span>
-                </section>
-                <section class="image">
-                    <img src="assets/images/pizza_2.jpg" alt="Піца BBQ"/>
-                </section>
-            </section>
-            <section class="listItem">
-                <section class="info">
-                    <span class="liName">Россо Густо (Мала)</span>
-                    <span class="sizingBought">
-                        <span>
-                            <img src="assets/images/size-icon.svg" alt="розмір піци">
-                            <label >30</label>
-                        </span>
-                        <span>
-                            <img src="assets/images/weight.svg" alt="вага піци">
-                            <label >400</label>
-                        </span>
-                     </span>
-                    <span class="purse">
-                <span class="boughtPrice">189 грн</span>
-                 <span>
-                     <span class="remove circle ">-</span>
-                     <span class="number">1</span>
-                     <span class="add circle " >+</span>
-                 </span>
-                 <span class="delete circle">x</span>
-            </span>
-                </section>
-                <section class="image">
-                    <img src="assets/images/pizza_4.jpg" alt=" Піца Россо Густо"/>
-                </section>
-            </section>
-            <section class="listItem">
-                <section class="info">
-                    <span class="liName">Міксовий поло (Велика)</span>
-                    <span class="sizingBought">
-              <span >
-                <img src="assets/images/size-icon.svg" alt="розмір піци">
-                <label >40</label>
-              </span>
-              <span>
-                <img src="assets/images/weight.svg" alt="вага піци">
-                 <label >780</label>
-              </span>
-            </span>
-            <span class="purse">
-                <span class="boughtPrice">179 грн</span>
-                 <span>
-                     <span class="remove circle ">-</span>
-                     <span class="number">1</span>
-                     <span class="add circle " >+</span>
-                 </span>
-                 <span class="delete circle">x</span>
-            </span>
-                </section>
-                <section class="image">
-                    <img src="assets/images/pizza_1.jpg" alt="Піца Міксовий поло"/>
-                </section>
-            </section>
+<!--            <section class="listItem">-->
+<!--                <section class="info">-->
+<!--                    <span class="liName">BBQ (Мала)</span>-->
+<!--                    <span class="sizingBought">-->
+<!--               <span>-->
+<!--                <img src="assets/images/size-icon.svg" alt="розмір піци">-->
+<!--                <label>30</label>-->
+<!--              </span>-->
+<!--              <span>-->
+<!--                <img src="assets/images/weight.svg" alt="вага піци">-->
+<!--                 <label>460</label>-->
+<!--              </span>-->
+<!--            </span>-->
+<!--                    <span class="purse">-->
+<!--                <span class="boughtPrice">556 грн</span>-->
+<!--                 <span>-->
+<!--                     <span class="remove circle ">-</span>-->
+<!--                     <span class="number">4</span>-->
+<!--                     <span class="add circle " >+</span>-->
+<!--                 </span>-->
+<!--                 <span class="delete circle">x</span>-->
+<!--            </span>-->
+<!--                </section>-->
+<!--                <section class="image">-->
+<!--                    <img src="assets/images/pizza_2.jpg" alt="Піца BBQ"/>-->
+<!--                </section>-->
+<!--            </section>-->
+<!--            <section class="listItem">-->
+<!--                <section class="info">-->
+<!--                    <span class="liName">Россо Густо (Мала)</span>-->
+<!--                    <span class="sizingBought">-->
+<!--                        <span>-->
+<!--                            <img src="assets/images/size-icon.svg" alt="розмір піци">-->
+<!--                            <label >30</label>-->
+<!--                        </span>-->
+<!--                        <span>-->
+<!--                            <img src="assets/images/weight.svg" alt="вага піци">-->
+<!--                            <label >400</label>-->
+<!--                        </span>-->
+<!--                     </span>-->
+<!--                    <span class="purse">-->
+<!--                <span class="boughtPrice">189 грн</span>-->
+<!--                 <span>-->
+<!--                     <span class="remove circle ">-</span>-->
+<!--                     <span class="number">1</span>-->
+<!--                     <span class="add circle " >+</span>-->
+<!--                 </span>-->
+<!--                 <span class="delete circle">x</span>-->
+<!--            </span>-->
+<!--                </section>-->
+<!--                <section class="image">-->
+<!--                    <img src="assets/images/pizza_4.jpg" alt=" Піца Россо Густо"/>-->
+<!--                </section>-->
+<!--            </section>-->
+<!--            <section class="listItem">-->
+<!--                <section class="info">-->
+<!--                    <span class="liName">Міксовий поло (Велика)</span>-->
+<!--                    <span class="sizingBought">-->
+<!--              <span >-->
+<!--                <img src="assets/images/size-icon.svg" alt="розмір піци">-->
+<!--                <label >40</label>-->
+<!--              </span>-->
+<!--              <span>-->
+<!--                <img src="assets/images/weight.svg" alt="вага піци">-->
+<!--                 <label >780</label>-->
+<!--              </span>-->
+<!--            </span>-->
+<!--            <span class="purse">-->
+<!--                <span class="boughtPrice">179 грн</span>-->
+<!--                 <span>-->
+<!--                     <span class="remove circle ">-</span>-->
+<!--                     <span class="number">1</span>-->
+<!--                     <span class="add circle " >+</span>-->
+<!--                 </span>-->
+<!--                 <span class="delete circle">x</span>-->
+<!--            </span>-->
+<!--                </section>-->
+<!--                <section class="image">-->
+<!--                    <img src="assets/images/pizza_1.jpg" alt="Піца Міксовий поло"/>-->
+<!--                </section>-->
+<!--            </section>-->
         </section>
         <section class="order">
         <section class="valley">
           <label class="sum">Сума замовлення</label>
-          <label class="value"> 924 грн</label>
+          <label class="value"> 0 грн</label>
         </section>
             <section class="toOrder"><button class="button scale">Замовити</button></section>
         </section>
     </section>
 </section>
+
+<script src="/Frontend/src/Pizza_List.js"></script>
+<script src="ejs.js"></script>
+<script src="script.js"></script>
+
 </body>
 <footer class="projectInfo">
     <section class="project">Pizza.23 - практичний проект в межах курсу JavaScript в Києво-Могилянській Академії</section>

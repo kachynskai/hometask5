@@ -434,6 +434,9 @@ span.highlightedType {
 .scale{
     padding: 5px;
 }
+/*.purse{*/
+/*    justify-content: space-between;*/
+/*}*/
 
 @media (max-width: 965px) {
     .сost{

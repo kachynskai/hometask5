@@ -22,6 +22,18 @@ for(let i=0; i<typeList.length; i++){
         drawTypePizzas();
     }
 }
+document.getElementsByClassName("clear")[0].addEventListener("click", function(){
+    if(reserved.length!==0){
+        reserved=[];
+    }
+    drawRightPanel();
+})
+document.getElementsByClassName("toOrder")[0].addEventListener("click", function(){
+    if(reserved.length!==0){
+        reserved=[];
+    }
+    drawRightPanel();
+})
 function generatePizzaItemForLeftPanel(pizza){
     let pizzaItem =ejs.render(`
      <section class="pizzaItem">
@@ -94,11 +106,11 @@ function generatePizzaItemForRightPanel(reservedPizza){
                     <span class="purse">
                 <span class="boughtPrice"><%= pizza.price*pizza.amount %> грн</span>
                  <span>
-                     <span class="remove circle ">-</span>
+                     <button class="remove circle " onclick="reduceNumber('<%= pizza.name%>', '<%= pizza.size%>')">-</button>
                      <span class="number"><%= pizza.amount%></span>
-                     <span class="add circle " >+</span>
+                     <button class="add circle " onclick="increaseNumber('<%= pizza.name%>', '<%= pizza.size%>')">+</button>
                  </span>
-                 <span class="delete circle">x</span>
+                 <button class="delete circle" onclick="removeItem('<%= pizza.name%>', '<%= pizza.size%>')">x</button>
             </span>
                 </section>
                 <section class="image">
@@ -119,19 +131,54 @@ function makeReserved(name, size, price, sizeCM, weight, image){
     reserved.push(new Reserved(name,size,price,sizeCM,weight,image));
     drawRightPanel();
 }
+function increaseNumber(name, size){
+    for(let i=0; i<reserved.length; i++){
+        if(name===reserved[i].name&& size===reserved[i].size){
+            reserved[i].amount++;
+            drawRightPanel();
+            return;
+        }
+    }
+}
+function reduceNumber(name, size){
+for (let i=0; i<reserved.length; i++){
+    if(name===reserved[i].name&& size===reserved[i].size){
+        reserved[i].amount--;
+        if(reserved[i].amount===0){
+            reserved.splice(i,1);
+            drawRightPanel();
+            return;
+            // removeItem(name, size);
+        }
+        drawRightPanel();
+        return;
+    }
+}
+}
+function removeItem(name,size){
+    for(let i=0; i!==reserved.length; i++){
+        if(reserved[i].name===name&&reserved[i].size===size){
+            reserved.splice(i,1);
+            drawRightPanel();
+            return;
+        }
+    }
+
+}
+
 function drawRightPanel(){
     let newHtml="";
-    let sumaryPrice= 0;
+    let summaryPrice= 0;
     let amount=0;
     document.getElementsByClassName("listBought")[0].innerHTML="";
     for(let i=0; i<reserved.length; i++){
         newHtml+=generatePizzaItemForRightPanel(reserved[i]);
-        sumaryPrice+=reserved[i].amount*reserved[i].price;
+        summaryPrice+=reserved[i].amount*reserved[i].price;
         amount+=reserved[i].amount;
     }
     document.getElementById("amountReserved").innerText=String(amount);
     document.getElementsByClassName("listBought")[0].innerHTML=newHtml;
-    document.getElementsByClassName("value")[0].innerText=String(sumaryPrice)+ " грн"
+    document.getElementsByClassName("value")[0].innerText=String(summaryPrice)+ " грн"
 
 
 }

@@ -9,7 +9,10 @@ class Reserved{
         this.amount=1;
     }
 }
-let reserved=[];
+let reserved=JSON.parse(localStorage.getItem("reserved"));
+if(!reserved){
+    reserved=[];
+}
 let typeList=document.querySelectorAll(".typeList span");
 for(let i=0; i<typeList.length; i++){
     let type=typeList[i];
@@ -179,7 +182,7 @@ function drawRightPanel(){
     document.getElementById("amountReserved").innerText=String(amount);
     document.getElementsByClassName("listBought")[0].innerHTML=newHtml;
     document.getElementsByClassName("value")[0].innerText=String(summaryPrice)+ " грн"
-
+    localStorage.setItem("reserved",JSON.stringify(reserved));
 
 }
 function contentOfThePizza(pizza){
